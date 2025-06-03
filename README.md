@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 XtremReels
 
-## Getting Started
+XtremReels is a full-stack Reels sharing platform built with modern web technologies like **Next.js**, **MongoDB**, **ImageKit**, and **NextAuth**. Users can create, upload, and share short-form videos with real-time performance and sleek UI.
 
-First, run the development server:
+<!-- ![XtremReels Banner](https://ik.imagekit.io/your-imagekit-id/banner.png) -->
+
+---
+
+## 🧰 Tech Stack
+
+* **Frontend**: [Next.js](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/), [DaisyUI](https://daisyui.com/)
+* **Authentication**: [NextAuth.js](https://next-auth.js.org/)
+* **Media Management**: [ImageKit.io](https://imagekit.io/)
+* **Database**: [MongoDB Atlas](https://www.mongodb.com/atlas)
+
+---
+
+## ✨ Features
+
+* 🔐 Secure user authentication with Google / Email
+* 📦 Upload and optimize videos/images using ImageKit
+* 🧵 Responsive, themeable UI with TailwindCSS + DaisyUI
+* 🗃️ Store user and media data in MongoDB
+* 📱 Mobile-first design with smooth UX
+* 🚀 Optimized for performance and scalability
+
+---
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+.
+├── components/
+├── pages/
+│   ├── api/
+│   └── auth/
+├── styles/
+├── utils/
+├── lib/
+├── models/
+└── public/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repo**
 
-## Learn More
+   ```bash
+   git clone https://github.com/TayyabXtreme/XtremReels.git
+   cd XtremReels
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Add environment variables**
 
-## Deploy on Vercel
+   Create a `.env.local` file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```env
+   MONGODB_URI=your_mongodb_uri
+   NEXTAUTH_SECRET=your_nextauth_secret
+   NEXTAUTH_URL=http://localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
+   IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
+   IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_id/
+   ```
+
+4. **Run the dev server**
+
+   ```bash
+   npm run dev
+   ```
+
+---
+
+<!-- ## 🖼️ Screenshots (Optional)
+
+| Auth Page                                        | Feed                                             | Upload                                               |
+| ------------------------------------------------ | ------------------------------------------------ | ---------------------------------------------------- |
+| ![Auth](https://ik.imagekit.io/your-id/auth.png) | ![Feed](https://ik.imagekit.io/your-id/feed.png) | ![Upload](https://ik.imagekit.io/your-id/upload.png) | -->
+
+---
+
+## 🧠 Learnings
+
+* ImageKit real-time image/video transformation
+* Integrating authentication with NextAuth
+* Building reusable UI with Tailwind + DaisyUI
+* Full-stack integration with MongoDB and Next.js API routes
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🔗 Connect
+
+Made with 💻 by [Tayyab](https://github.com/TayyabXtreme)
